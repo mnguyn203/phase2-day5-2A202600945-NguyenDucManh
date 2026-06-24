@@ -39,3 +39,5 @@ class BenchmarkMetrics(BaseModel):
     estimated_cost_usd: float | None = None
     quality_score: float | None = Field(default=None, ge=0, le=10)
     notes: str = ""
+    response_content: str | None = None
+
